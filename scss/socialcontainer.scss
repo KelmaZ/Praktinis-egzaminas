@@ -1,0 +1,41 @@
+.social-container {
+    height: 105px;
+    max-width: 1400px;
+    width: calc(100% - 200px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background: white;
+    padding: 0 158px 0 151px;
+    
+    @media (max-width: 768px) {
+      width: 90%;
+      padding: 0 20px;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  .social-left {
+    color: #333333;
+  }
+  
+  .social-left p {
+    color: #86878B;
+  }
+  
+  .social-right {
+    display: flex;
+    color: $nav-before-color; 
+  }
+  
+  .social-right img {
+    width: 24px;
+    height: 30px;
+    margin-right: 104px;
+    @media (max-width: 768px) {
+      margin: 10px 0;
+    }
+   } 

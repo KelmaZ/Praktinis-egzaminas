@@ -1,0 +1,105 @@
+.reward {
+    background-color: $nav-hover-color;
+    height: 592px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Norime, kad elementai būtų staplėje */
+    justify-content: center; /* Centruoti elementus viršuje */
+    align-items: center; 
+  
+    .awesome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px;
+  
+      h1 {
+        color: $reward-color;
+        font-family: $nav-font;
+        margin: 0;
+        
+      }
+  
+      .divider1 {
+        width: 64px;
+        height: 2px;
+        background-color: $nav-before-color;
+        margin: 10px 0;
+      }
+  
+      p {
+        color: $reward-p-color;
+        font-family: $nav-font;
+      }
+    }
+  
+    .simbolic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  
+      .simbols {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        img {
+          width: 64px;
+          height: 64px;
+        }
+  
+        h2 {
+          color: $reward-h2-color;
+          margin: 0;
+          font-family: $nav-font;
+        }
+  
+        p {
+          color: $reward-p-color;
+          font-family: $nav-font;
+        }
+  
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+  
+      .simbols:first-child {
+        margin-left: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .reward {
+      height: auto; /* Pasirūpinkite, kad aukštis būtų automatiškai pritaikomas turiniui */
+      padding: 20px; /* Papildomas tarpas, kad turinys nebūtų per siauras */
+    }
+  
+    .awesome {
+      margin-bottom: 20px; /* Papildomas tarpas tarp skyriaus "awesome" ir "simbolic" */
+    }
+  
+    .simbolic {
+      flex-direction: column; /* Keičiame iš eilės į stulpelį */
+      gap: 20px; /* Papildomas tarpas tarp .simbols elementų */
+    }
+  
+    .simbols {
+      margin: 0; /* Pašaliname margin, kad elementai nebūtų pernelyg atstumti */
+    }
+  }
+  
+  
+  
+  
+  
+  
+
+
+
+
+

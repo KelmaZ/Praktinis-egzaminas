@@ -1,0 +1,100 @@
+.transitioning {
+    background-image: url('/app/images/christoffer-engstrom-503481-unsplash@2x.png');
+    background-size: 100% 595px; 
+    display: flex;
+    align-items: flex-start;
+    padding: 20px; 
+  }
+  
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    
+  }
+  
+  .tab {
+    padding: 10px;
+    background-color: $tab-backround;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+    height: 100px;
+    border: none;
+    color: $nav-hover-color;
+    font-family: $nav-font;
+    
+  }
+  
+  
+  .tab:first-child.active {
+    background-color: $nav-before-color; 
+  }
+  
+  
+  
+  .tab::before {
+    content: ""; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(45deg);
+    pointer-events: none;
+  }
+  
+  
+  .images {
+    display: flex;
+    flex-direction: column;
+    width: 168px;
+  }
+  
+  .images img {
+    margin-left: 10px; 
+    max-width: 150px;
+    height: auto;
+  }
+  
+  
+  .tab.active {
+    background-color: $nav-before-color; 
+  }
+
+  .textContent {
+    position: relative; 
+    left: 0;
+    transition: left 0.3s ease-in-out;
+    color: white;
+    font-family: $nav-font;
+}
+
+  .tab.active ~ .textContent {
+    left: -100%; 
+    transition: left 0.3s ease-in-out; 
+    font-family: $nav-font;
+}
+
+.tab.active ~ .textContent.active {
+  left: 0; 
+  transition: left 0.3s ease-in-out 0.3s; 
+  font-family: $nav-font;
+}
+
+  @media (max-width: 786px) {
+    .transitioning {
+        padding: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .tabs {
+        margin-right: 0;
+    }
+
+    .tab {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+  
