@@ -1,0 +1,45 @@
+footer {
+    height: 123px;
+    width: 100%;
+    background: $nav-color;
+    display: flex;
+    justify-content: space-between;
+    color: $nav-a-color;
+    align-items: end; 
+    padding: 0 158px 0 151px;
+  
+   h2 {
+    opacity: 0.5;
+    font-family: $nav-font;
+   }
+  
+   }
+   .socials {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: end;
+    width: 20px;
+    height: 20px;
+    gap: 113px;
+   } 
+
+   @media screen and (max-width: 786px) {
+    footer {
+        padding: 0 20px;
+    }
+
+    .socials {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    footer {
+        padding: 0 10px;
+    }
+
+    .socials {
+        gap: 10px;
+    }
+}

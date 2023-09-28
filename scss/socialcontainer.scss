@@ -2,11 +2,12 @@
     height: 105px;
     max-width: 1400px;
     width: calc(100% - 200px);
+    font-family: $nav-font;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    background: white;
+    background: $nav-a-color;
     padding: 0 158px 0 151px;
     
     @media (max-width: 768px) {
