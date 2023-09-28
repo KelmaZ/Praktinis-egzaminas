@@ -16,3 +16,84 @@ img {
   opacity: 1;
 }
 
+.flexcontainer {
+  background-color: $flex-background;
+  width: 100%;
+  height: 590px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  width: 380px;
+  height: 200px;
+  background-color: $nav-hover-color;
+  // padding: 70px;
+  margin: 100px;
+  border-radius: 5px;
+  opacity: 1;
+  
+
+}
+
+.planb {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  width: 380px;
+  background-color: $nav-hover-color;
+  // padding: 70px;
+  margin: 100px;
+  border-radius: 5px;
+  opacity: 1;
+
+  
+}
+
+ul {
+  list-style: none;
+  font-family: $nav-font;
+}
+
+li {
+  font-family: $nav-font;
+  color: $reward-p-color;
+}
+
+a {
+  text-align: center;
+  width: 100%;
+  height: 210px;
+  background: #333333;
+  font-family: $nav-font;
+  color: $nav-hover-color;
+  text-decoration: none;
+}
+
+a p {
+color: $nav-a-color;
+font-family: $nav-font;
+}
+
+.diviner2 {
+background-color: $diviner-color;
+width: 380px;
+height: 6px;
+opacity: 1;
+}
+
+.divinerm {
+  font-family: $nav-font;
+  color: $nav-a-color;
+  background-color: $diviner-color;
+}
+
+
